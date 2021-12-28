@@ -238,3 +238,45 @@ button:hover{
 .singleLoremTwo img{
     width: 100%;
 }
+.gallery{
+    padding: 50px 0;
+    background-color: #f4f4f4;
+}
+.galleryContainer{
+    width: 60%;
+    margin: auto;
+}
+.galleryContent{
+    text-align: center;
+}
+.galleryContent h1{
+    font-size: 50px;
+    position: relative;
+    padding-bottom: 15px;
+}
+.galleryContent h1::before{
+    content: '';
+    width: 75px;
+    height: 3px;
+    background-color: #ff3556;
+    position: absolute;
+    bottom: 23px;
+}
+.galleryRow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.galleryItem{
+    flex-basis: 31.5%;
+    background-color: white;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+.galleryItem img{
+    width: 100%;    
+    transition: 0.5s;  
+}
+.galleryItem img:hover{
+    transform: scale(1.2);
+}
